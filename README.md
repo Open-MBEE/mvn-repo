@@ -15,6 +15,7 @@ Installing AMPs
     java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-repo alfresco.war
     java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-share share.war
 # Install the amps
+    cd $TOMCAT/webapps
     java -jar $ALFRESCO/bin/alfresco-mmt.jar install $PATH_TO_AMP/mms-repo.amp $TOMCAT/alfresco.war -force
     java -jar $ALFRESCO/bin/alfresco-mmt.jar install $PATH_TO_AMP/mms-share.amp $TOMCAT/share.war -force
 # Explode the alfresco.war in the $TOMCAT/webapps directory
