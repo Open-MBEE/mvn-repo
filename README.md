@@ -12,7 +12,7 @@ Installing AMPs
 
 # Uninstall any existing amps
     java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-repo
-    java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-repo
+    java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-share
 # Install the amps
     java -jar $ALFRESCO/bin/alfresco-mmt.jar install $PATH_TO_AMP/mms-repo.amp $TOMCAT/alfresco.war -force
     java -jar $ALFRESCO/bin/alfresco-mmt.jar install $PATH_TO_AMP/mms-share.amp $TOMCAT/share.war -force
