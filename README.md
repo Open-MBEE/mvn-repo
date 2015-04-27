@@ -11,15 +11,19 @@ Installation instructions
 Installing AMPs
 
 # Uninstall any existing amps
-    java -jar alfresco-mmt.jar uninstall mms-repo/mms-share
+    java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-repo
+    java -jar $ALFRESCO/bin/alfresco-mmt.jar uninstall mms-repo
 # Install the amps
-    java -jar alfresco-mmt.jar install mms-repo.amp alfresco.war -force
-# Explode the alfresco.war in the webapps director
+    java -jar $ALFRESCO/bin/alfresco-mmt.jar install $PATH_TO_AMP/mms-repo.amp $TOMCAT/alfresco.war -force
+    java -jar $ALFRESCO/bin/alfresco-mmt.jar install $PATH_TO_AMP/mms-share.amp $TOMCAT/share.war -force
+# Explode the alfresco.war in the $TOMCAT/webapps directory
+    rm -rf alfresco
     mkdir alfresco
     cd alfresco
     jar xvf ../alfresco.war
 # Unzip EVM into alfresco directory, move to the correct place, and update the permissions
     unzip evm.zip .
     mv build mmsapp
-    chown -R alfresco:alfresco mmsapp
+    cd $TOMCAT/webapps
+    chown -R tomcat:tomcat webapps
 # Note you will probably need to update the permissions on all the directories, files, touched
