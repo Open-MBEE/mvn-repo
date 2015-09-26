@@ -13,31 +13,36 @@ To do so:
 # Java path    
 
     sudo vi /etc/profile.d/java.sh
+
 Copy paste
 
     export JAVA_HOME=/lib/jvm/jre-1.7.0-openjdk
     export PATH=$PATH:$JAVA_HOME
+
 Save
 
 # Alfresco path
 
     sudo vi /etc/profile.d/alfresco.sh
+
 Copy paste
 
     export ALFRESCO=/opt/alfresco{Version}
     export PATH=$PATH:$ALFRESCO
+
 Save
 
 # Tomcat path
 
     sudo vi /etc/profile.d/tomcat.sh
+
 Copy Paste
 
     export TOMCAT=/opt/alfresco{VERSION}/tomcat
     export PATH:$PATH:$TOMCAT
 
-    
 close terminal
+
 # Optional
 Cloning mvn-repo, Add PATH_TO_AMP and changing amp file names
 
@@ -45,6 +50,7 @@ Clone Repo
 
     cd ~/git
     git clone https://github.com/open-mbee/mvn-repo
+
 # Add Path to Amps
 
     sudo vi /etc/profile.d/path_to_amp.sh
@@ -52,11 +58,17 @@ Copy paste
 
     export PATH_TO_AMP=~/git/mvn-repo
     export PATH=$PATH:$PATH_TO_AMP
+
 Save
 
     cd ~/git/mvn-repo
     mv mms-repo-#####...amp mms-repo.amp
     mv mms-share-#####...amp mms-share.amp
+
+
+Save
+close terminal
+
 * NOTE: That if you get a 'module.properties' error when installing the amps, it is most likely the version of either the repo or share amp. Remove the version that is failing and try the other version of the amp file.
 
 
