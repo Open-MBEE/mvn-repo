@@ -39,14 +39,13 @@ Copy Paste
     
 close terminal
 # Optional
-Add PATH_TO_AMP and changing amp file names
+Cloning mvn-repo, Add PATH_TO_AMP and changing amp file names
 
-# Add Path to Amps
+Clone Repo
 
     cd ~/git
     git clone https://github.com/open-mbee/mvn-repo
-
-Add amps to path
+# Add Path to Amps
 
     sudo vi /etc/profile.d/path_to_amp.sh
 Copy paste
