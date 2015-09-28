@@ -90,6 +90,11 @@ Installing AMPs
     mkdir alfresco
     cd alfresco
     jar xvf ../alfresco.war
+# Explode the alfresco.war in the $TOMCAT/webapps directory
+    rm -rf share
+    mkdir share
+    cd share
+    jar xvf ../share.war
 # Unzip EVM into alfresco directory, move to the correct place, and update the permissions
     unzip evm.zip .
     mv build mmsapp
