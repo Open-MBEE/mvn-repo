@@ -39,7 +39,7 @@ Save
 Copy Paste
 
     export TOMCAT=/opt/alfresco{VERSION}/tomcat
-    export PATH:$PATH:$TOMCAT
+    export PATH=$PATH:$TOMCAT
 
 close terminal
 
@@ -49,7 +49,7 @@ Cloning mvn-repo, Add PATH_TO_AMP and changing amp file names
 Clone Repo
 
     cd ~/git
-    git clone https://github.com/open-mbee/mvn-repo
+    git clone https://github.com/open-mbee/mvn-repo.git
 
 # Add Path to Amps
 
